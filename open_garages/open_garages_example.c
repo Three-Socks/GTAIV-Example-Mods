@@ -6,7 +6,7 @@
  *
  * Press Dpad down to open/close the garage when your near one.
  *
- * Needs the fixed natives.h found this https://bitbucket.org/ThreeSocks/gtaiv-example-mods/ repo before the SET_GARAGE_LEAVE_CAMERA_ALONE native will work correctly.
+ * Needs the fixed natives.h found here https://bitbucket.org/ThreeSocks/gtaiv-example-mods/ repo before the SET_GARAGE_LEAVE_CAMERA_ALONE native will work correctly.
  */
 
 #include <natives.h>

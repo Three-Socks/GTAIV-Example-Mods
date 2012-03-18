@@ -4,14 +4,13 @@
  * By Three-Socks
  *
  *
-   Button combo's:
-
-   While holding Dpad left tap X - God Mode Enable/Disable
-   While holding Dpad right tap X - Clear wanted
-   While holding R3 tap X - Play as brucie. Press again for random clothes.
-   While holding X left tap L3 - Fix vehicle.
- 
- 
+ * Button combo's:
+ *
+ *  While holding Dpad left tap X - God Mode Enable/Disable
+ *  While holding Dpad right tap X - Clear wanted
+ *  While holding R3 tap X - Play as brucie. Press again for random clothes.
+ *  While holding X left tap L3 - Fix vehicle.
+ * 
  */
 
 #include <natives.h>
