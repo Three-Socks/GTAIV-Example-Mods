@@ -1,3 +1,10 @@
+/**
+ * This file is from https://bitbucket.org/ThreeSocks/gtaiv-example-mods/
+ *
+ * By Three-Socks
+ *
+ */
+
 #include <natives.h>
 #include <common.h>
 #include <strings.h>
@@ -9,7 +16,7 @@
 float x, y, z, h, pos_x = 0.05000000, width = 0.30000000, height = 0.30000000;
 uint r = 255, g = 255, b = 255, a = 110;
 
-void DoStuff(void)
+void DoLoop(void)
 {
 	GET_CHAR_COORDINATES(GetPlayerPed(), &x, &y, &z);
 	GET_CHAR_HEADING(GetPlayerPed(), &h);
@@ -29,10 +36,6 @@ void main(void)
 	while(true)
 	{
 		WAIT(0);
-		// We only want stuff to happen while their playing.
-		if (IS_PLAYER_PLAYING(GetPlayerIndex()))
-		{
-			DoStuff();
-		}
+		DoLoop();
 	}
 }
