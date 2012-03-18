@@ -3,6 +3,8 @@
  *
  * By Three-Socks
  *
+ * Teleports just outside brucie's garage with loading screen.
+ *
  */
 
 #include <natives.h>
