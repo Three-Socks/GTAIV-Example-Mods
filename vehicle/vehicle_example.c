@@ -36,7 +36,7 @@ void main(void)
 	// Use false if you want to spawn it exactly where you want it to.
 	Vehicle v_spawn;
 	CREATE_CAR(vehicle_model, spawn_x, spawn_y, spawn_z, &v_spawn, true);
-	
+
 	// Sets the vehicle heading
 	// Not needed for this example as we use usng collision detection to auto place the car.
 	//SET_CAR_HEADING(v_spawn, 180.0000);
@@ -58,11 +58,11 @@ void main(void)
 	CHANGE_CAR_COLOUR(v_spawn, 0, 89);
 
 	// Set the 1st/2nd extra car colour. Normally the specular or sometimes changes the wheel colour. 
-  SET_EXTRA_CAR_COLOURS(v_spawn, 0, 0);
-  
-  // Clean the vehicle.
-  SET_VEHICLE_DIRT_LEVEL(v_spawn, 0);
-  WASH_VEHICLE_TEXTURES(v_spawn, 255);
+	SET_EXTRA_CAR_COLOURS(v_spawn, 0, 0);
+
+	// Clean the vehicle.
+	SET_VEHICLE_DIRT_LEVEL(v_spawn, 0);
+	WASH_VEHICLE_TEXTURES(v_spawn, 255);
 
 	TERMINATE_THIS_SCRIPT();
 }
