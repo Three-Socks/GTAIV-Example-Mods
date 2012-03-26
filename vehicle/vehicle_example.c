@@ -3,7 +3,7 @@
  *
  * By Three-Socks
  *
- * Spawn a vehicle and set various options on the car (most are not needed) and change its colour.
+ * Spawns brucie's banshee and set various options on the car (most are not needed) and change its colour.
  *
  */
 
@@ -18,12 +18,10 @@ void main(void)
 	// This will be the vehicle that will be spawned. Check /inc/consts.h line 618 for vehicle model's.
 	uint vehicle_model = MODEL_BANSHEE;
 	// The coords the vehicle will spawn in.
-	// For this example it will spawn it +10 away from the current player coords.
+	// For this example it will spawn it +5 y away from the current player coords.
 	float spawn_x, spawn_y, spawn_z;
 	GET_CHAR_COORDINATES(GetPlayerPed(), &spawn_x, &spawn_y, &spawn_z);
-	spawn_x += 10;
-	spawn_y += 10;
-	spawn_z += 10;
+	spawn_y += 5;
 
 	REQUEST_MODEL(vehicle_model);
 	// Wait for the requested model to load. Otherwise it will crash if we try to use CREATE_CAR on the model.
@@ -44,7 +42,8 @@ void main(void)
 	// Free up the vehicle model in memory.
 	MARK_MODEL_AS_NO_LONGER_NEEDED(v_spawn);
 
-	// This will make so the car will never disappear.
+	// This will make so the vehicle will never disappear
+	// until another vehicle is set as the "mission car".
 	SET_CAR_AS_MISSION_CAR(v_spawn);
 
 	// These three natives are not needed. But are used incase
