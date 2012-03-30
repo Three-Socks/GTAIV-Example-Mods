@@ -1,0 +1,218 @@
+FnBegin 0 4
+CallNative 0xECE0B08 0 1
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x0
+CmpEq
+Push 0x3
+Var
+RefSet
+Push 0x0
+Push 0x3
+Var
+RefGet
+CmpEq
+JumpFalse @Label1
+Jump @Label2
+
+:Label1
+PushS 8633
+GlobalVar
+RefGet
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x2
+Var
+RefSet
+Jump @Label3
+
+:Label2
+CallNative 0xECE0B08 0 1
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x1
+CmpEq
+Push 0x3
+Var
+RefSet
+Push 0x0
+Push 0x3
+Var
+RefGet
+CmpEq
+JumpFalse @Label4
+Jump @Label5
+
+:Label4
+PushS 9186
+GlobalVar
+RefGet
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x2
+Var
+RefSet
+Jump @Label3
+
+:Label5
+CallNative 0xECE0B08 0 1
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x2
+CmpEq
+Push 0x3
+Var
+RefSet
+Push 0x0
+Push 0x3
+Var
+RefGet
+CmpEq
+JumpFalse @Label6
+Jump @Label3
+
+:Label6
+PushS 9235
+GlobalVar
+RefGet
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x2
+Var
+RefSet
+
+:Label3
+Push 0x0
+CallNative 0x7715C03B 1 0
+Push 0x2
+Var
+RefGet
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x0
+CmpEq
+Push 0x3
+Var
+RefSet
+Push 0x0
+Push 0x3
+Var
+RefGet
+CmpEq
+JumpFalse @Label7
+Jump @Label8
+
+:Label7
+CallNative 0xECE0B08 0 1
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x0
+CmpEq
+Push 0x3
+Var
+RefSet
+Push 0x0
+Push 0x3
+Var
+RefGet
+CmpEq
+JumpFalse @Label9
+Jump @Label10
+
+:Label9
+Push 0x1
+PushS 8633
+GlobalVar
+RefSet
+Jump @Label8
+
+:Label10
+CallNative 0xECE0B08 0 1
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x1
+CmpEq
+Push 0x3
+Var
+RefSet
+Push 0x0
+Push 0x3
+Var
+RefGet
+CmpEq
+JumpFalse @Label11
+Jump @Label12
+
+:Label11
+Push 0x1
+PushS 9186
+GlobalVar
+RefSet
+Jump @Label8
+
+:Label12
+CallNative 0xECE0B08 0 1
+Push 0x3
+Var
+RefSet
+Push 0x3
+Var
+RefGet
+Push 0x2
+CmpEq
+Push 0x3
+Var
+RefSet
+Push 0x0
+Push 0x3
+Var
+RefGet
+CmpEq
+JumpFalse @Label13
+Jump @Label8
+
+:Label13
+Push 0x1
+PushS 9235
+GlobalVar
+RefSet
+
+:Label8
+Jump @Label3
+FnEnd 0 0
