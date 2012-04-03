@@ -26,8 +26,10 @@ void main(void)
 	REQUEST_MODEL(vehicle_model);
 	// Wait for the requested model to load. Otherwise it will crash if we try to use CREATE_CAR on the model.
 	while (!HAS_MODEL_LOADED(vehicle_model)) WAIT(0);	
+
 	// This makes so the car won't spawn in traffic but it may still spawn parked.
-	SUPPRESS_CAR_MODEL(vehicle_model);
+	// Ignore the above comment. This needs more testing. I'm unsure now on the full effects of this function.
+	//SUPPRESS_CAR_MODEL(vehicle_model);
 
 	// Actually create the car. Store it in v_spawn. 
 	// The last parameter sets if we want to use collision detection. 
