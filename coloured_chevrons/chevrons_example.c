@@ -50,7 +50,7 @@ void main(void)
 			if (IS_CHAR_ON_FOOT(GetPlayerPed()))
 			{
 					SET_CHAR_COORDINATES_NO_OFFSET(GetPlayerPed(), teleport_heliup_x, teleport_heliup_y, teleport_heliup_z);
-					SET_CHAR_HEADING(GetPlayerPed(), 268.0);
+					SET_CHAR_HEADING(GetPlayerPed(), teleport_heliup_h);
 					LOAD_SCENE(teleport_helidown_x, teleport_helidown_y, teleport_helidown_z);
 					SET_CAM_BEHIND_PED(GetPlayerPed());
 			}
