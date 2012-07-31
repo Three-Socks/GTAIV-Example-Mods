@@ -5,9 +5,10 @@
 
 #pragma once
 
+// Dummy function.
 void run_my_code(void)
 {
-	// Your code/natives.
+	// Your code.
 }
 
 void project_doAction(void)
