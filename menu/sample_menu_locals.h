@@ -1,8 +1,3 @@
-/**
- * This file is from Three-Socks Trainer Project https://bitbucket.org/ThreeSocks/gtaiv-trainer
- *
- */
-
 #pragma once
 
 // Error ID's

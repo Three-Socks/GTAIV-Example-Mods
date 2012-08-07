@@ -1,8 +1,3 @@
-/**
- * This file is from Three-Socks trainer Project https://bitbucket.org/ThreeSocks/gtaiv-trainer
- *
- */
-
 #pragma once
 
 #define sample_menu_main "Main"
